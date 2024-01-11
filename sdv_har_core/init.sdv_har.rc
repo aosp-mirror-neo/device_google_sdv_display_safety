@@ -1,0 +1,10 @@
+# Copyright 2024 Google LLC
+
+# This is the main RC file executed at startup on sdv_har_* systems.
+# It overrides the SDV Media system RC, but also includes it as the first step.
+
+# Import the base rc file.
+import /system/etc/init/hw/init.sdv_media.rc
+
+# Init Harry (the HAR platform reference implementation).
+import /vendor/etc/init/harry_init.rc
