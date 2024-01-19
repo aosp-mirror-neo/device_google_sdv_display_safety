@@ -16,7 +16,7 @@
 # An SDV Media system with HAR preinstalled.
 
 # This parameter is expected to be set by sdv_harry.mk
-DISPLAY_SAFETY_HOME := device/google/sdv_display_safety
+DISPLAY_SAFETY_HOME := vendor/google/display_safety/service
 
 # Sets the name of the product.
 PRODUCT_NAME := sdv_media_har_cf
