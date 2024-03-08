@@ -64,5 +64,11 @@ PRODUCT_PACKAGES += \
         harry_res_camera_config \
         harry_res_camera_emulation_source \
 
+# The following packages need to be added to the repo from a custom build
+# A not-existing package will not cause an error.
+PRODUCT_PACKAGES += \
+    v4l2-ctl \
+    ffmpeg
+
 PRODUCT_COPY_FILES += \
     device/google/sdv_display_safety/sdv_har_core/init.sdv_har.rc:/system/etc/init/hw/init.sdv_har.rc \
