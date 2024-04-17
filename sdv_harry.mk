@@ -60,7 +60,9 @@ PRODUCT_PACKAGES += \
         harry_res_audio_chime_tick \
         harry_res_audio_chime_tock \
         harry_res_audio_chime_welcome \
+        harry_res_audio_chime_welcome_mono \
         harry_res_audio_chime_wilhelm \
+        harry_res_audio_chime_wilhelm_mono \
         harry_res_camera_config \
         harry_res_camera_emulation_source \
 
