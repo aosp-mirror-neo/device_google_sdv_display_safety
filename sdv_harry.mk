@@ -31,6 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     harry \
     com.google.display_safety.har.init_data_folder.sh \
+    vehicledata_publisher_service \
     fake_vehicledata_publisher_service \
     har_sdv_service \
     null_platform_test \
