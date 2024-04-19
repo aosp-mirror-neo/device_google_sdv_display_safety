@@ -24,5 +24,8 @@ PRODUCT_NAME := sdv_media_har_arm64
 # Sets the device, that selects the BoardConfig.mk in sdv_har_arm64
 PRODUCT_DEVICE := sdv_har_arm64
 
+# Set HAR_USE_APEX to false to install Harry without using an APEX
+HAR_USE_APEX := true
+
 $(call inherit-product, device/google/sdv/sdv_media_arm64/sdv_media_arm64.mk)
-$(call inherit-product, device/google/sdv_display_safety/sdv_harry.mk)
+$(call inherit-product, device/google/sdv_display_safety/sdv_harry_common.mk)
