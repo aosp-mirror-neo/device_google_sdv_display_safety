@@ -18,6 +18,10 @@
 # This parameter is expected to be set by sdv_harry.mk
 DISPLAY_SAFETY_HOME := vendor/google/display_safety/service
 
+# Set QNX IP
+PRODUCT_PROPERTY_OVERRIDES += \
+     vendor.harplatform.safety_monitor = "192.168.101.1"
+
 # Sets the name of the product.
 PRODUCT_NAME := sdv_media_har_arm64
 
