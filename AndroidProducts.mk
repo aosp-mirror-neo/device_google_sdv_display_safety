@@ -26,5 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/sdv_media_har_arm64.mk \
-    $(LOCAL_DIR)/sdv_media_har_cf.mk \
+    $(LOCAL_DIR)/sdv_media_har_cf.mk
