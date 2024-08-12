@@ -4,7 +4,10 @@
 # It overrides the SDV Media system RC, but also includes it as the first step.
 
 # Import the base rc file.
+# TODO: b/359155988 - depend only on "base" targets
+# arm64 target imports init.sdv_media.rc, CF init is installed to sdv_media_cf.rc
 import /system/etc/init/hw/init.sdv_media.rc
+import /system/etc/init/hw/init.sdv_media_cf.rc
 
 # Init Harry (the HAR platform reference implementation).
 import /vendor/etc/init/harry_init.rc
