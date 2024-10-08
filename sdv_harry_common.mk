@@ -48,3 +48,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     v4l2-ctl \
     ffmpeg
+
+# Additional utility for Audio Mixer Control.
+PRODUCT_PACKAGES += \
+   tinymix2 \
