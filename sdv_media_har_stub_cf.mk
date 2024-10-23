@@ -17,4 +17,4 @@
 # To use the prebuilt app, please use sdv_media_har_cf.
 HAR_USE_STUB_APP := true
 
-$(call inherit-product, device/google/sdv/sdv_media_cf/sdv_media_har_cf.mk)
+$(call inherit-product, device/google/sdv_display_safety/sdv_media_har_cf.mk)
