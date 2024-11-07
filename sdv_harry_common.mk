@@ -24,15 +24,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.harplatform.grpc.started=false
 
-# Set default value for APEX usage.
-HAR_USE_APEX?=true
-
-# Include the Harry bundle based on the requested packaging mode.
-ifeq ($(HAR_USE_APEX), true)
 $(call inherit-product, vendor/google/display_safety/service/product/harry_apex/product.mk)
-else
-$(call inherit-product, vendor/google/display_safety/service/product/harry_standalone/product.mk)
-endif # HAR_USE_APEX
 
 # Copy the main init rc.
 PRODUCT_COPY_FILES += \
