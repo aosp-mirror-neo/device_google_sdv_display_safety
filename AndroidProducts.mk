@@ -28,4 +28,5 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/sdv_media_har_cf.mk \
     $(LOCAL_DIR)/sdv_media_har_stub_cf.mk \
-    $(LOCAL_DIR)/sdv_ivi_arm64_ds.mk
+    $(LOCAL_DIR)/sdv_ivi_arm64_ds.mk \
+    $(LOCAL_DIR)/aosp_cf_x86_64_auto_ds.mk
