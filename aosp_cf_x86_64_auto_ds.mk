@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_BOARD_INFO_FILE := device/google/sdv_display_safety/auto_ds/android-info.txt
+
 # Include Display Safety packages and configs
 $(call inherit-product, vendor/google/display_safety/service/ivi/ds_common.mk)
 
@@ -26,6 +28,9 @@ include device/google/sdv/sdv_ivi_cf/sdv_ivi_cf.mk
 
 PRODUCT_PACKAGES += \
     vvmconfig.example
+
+# Include the`launch_cvd --config auto_ds` option.
+$(call soong_config_append,cvd,launch_configs,cvd_config_auto_ds.json)
 
 PRODUCT_NAME := aosp_cf_x86_64_auto_ds
 PRODUCT_DEVICE := sdv_ivi_cf

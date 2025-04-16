@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2025 Google LLC
+//
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+prebuilt_etc_host {
+    name: "cvd_config_auto_ds.json",
+    src: "config_auto_ds.json",
+    sub_dir: "cvd_config",
+}
