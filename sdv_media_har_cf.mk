@@ -18,6 +18,9 @@
 # This parameter is expected to be set by sdv_harry.mk
 DISPLAY_SAFETY_HOME := vendor/google/display_safety/service
 
+# TODO: b/411429498 - Revert the RPC network interface to sdv_rpc.
+SDV_RPC_INTERFACE ?= eth1
+
 # Sets the name of the product.
 PRODUCT_NAME := sdv_media_har_cf
 
