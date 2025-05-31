@@ -19,9 +19,6 @@ TARGET_BOARD_INFO_FILE := device/google/sdv_display_safety/auto_ds/android-info.
 # Include Display Safety packages and configs
 $(call inherit-product, vendor/google/display_safety/service/ivi/ds_common.mk)
 
-# Load base AOSP target.
-$(call inherit-product, device/google/cuttlefish/vsoc_x86_64_only/auto/aosp_cf.mk)
-
 # Load IVI packages and configs
 LOCAL_VHAL_PRODUCT_PACKAGE := android.hardware.automotive.vehicle@V1-sdv-emulator-service
 include device/google/sdv/sdv_ivi_cf/sdv_ivi_cf.mk
@@ -32,7 +29,7 @@ PRODUCT_PACKAGES += \
 # Include the`launch_cvd --config auto_ds` option.
 $(call soong_config_append,cvd,launch_configs,cvd_config_auto_ds.json)
 
-PRODUCT_NAME := aosp_cf_x86_64_auto_ds
+PRODUCT_NAME := sdv_ivi_ds_cf
 PRODUCT_DEVICE := sdv_ivi_cf
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Cuttlefish x86_64 auto with Display Safety
+PRODUCT_MODEL := SDV-IVI_cf_x86_64 Display Safety
