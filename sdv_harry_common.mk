@@ -17,14 +17,14 @@
 
 # Add common sepolicies
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    vendor/google/display_safety/service/product/sepolicy \
+    packages/services/display_safety/service/product/sepolicy \
 
 # Property set by harry once the GRPC server is running.
 # This is used as a property trigger to start other services.
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.harplatform.grpc.started=false
 
-$(call inherit-product, vendor/google/display_safety/service/product/harry_apex/product.mk)
+$(call inherit-product, packages/services/display_safety/service/product/harry_apex/product.mk)
 
 # Copy the main init rc.
 PRODUCT_COPY_FILES += \

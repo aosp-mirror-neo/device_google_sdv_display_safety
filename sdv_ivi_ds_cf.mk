@@ -17,7 +17,7 @@
 TARGET_BOARD_INFO_FILE := device/google/sdv_display_safety/auto_ds/android-info.txt
 
 # Include Display Safety packages and configs
-$(call inherit-product, vendor/google/display_safety/service/ivi/ds_common.mk)
+$(call inherit-product, packages/services/display_safety/service/ivi/ds_common.mk)
 
 # Load IVI packages and configs
 LOCAL_VHAL_PRODUCT_PACKAGE := android.hardware.automotive.vehicle@V1-sdv-emulator-service
