@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
 # Include the`launch_cvd --config auto_ds` option.
 $(call soong_config_append,cvd,launch_configs,cvd_config_auto_ds.json)
 
-PRODUCT_NAME := sdv_ivi_ds_cf
+PRODUCT_NAME := sdv_ivi_cf_ds
 PRODUCT_DEVICE := sdv_ivi_cf
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := SDV-IVI_cf_x86_64 Display Safety
+PRODUCT_MODEL := SDV-IVI CF Display Safety
