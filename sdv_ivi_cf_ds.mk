@@ -21,6 +21,8 @@ $(call inherit-product, packages/services/display_safety/service/ivi/ds_common.m
 
 # Load IVI packages and configs
 LOCAL_VHAL_PRODUCT_PACKAGE := android.hardware.automotive.vehicle@V1-sdv-emulator-service
+# TODO: b/411429498 - Revert the RPC network interface to sdv_rpc.
+SDV_RPC_INTERFACE := eth1
 include device/google/sdv/sdv_ivi_cf/sdv_ivi_cf.mk
 
 PRODUCT_PACKAGES += \
