@@ -18,6 +18,13 @@
 # This parameter is expected to be set by sdv_harry.mk
 DISPLAY_SAFETY_HOME := packages/services/display_safety/service
 
+# Set Safety Monitor IP
+PRODUCT_PRODUCT_PROPERTIES += \
+     persist.product.harplatform.safetymonitor = "127.0.0.1"
+
+PRODUCT_SYSTEM_PROPERTIES += \
+     persist.product.harplatform.safetymonitor = "127.0.0.1"
+
 # TODO: b/411429498 - Revert the RPC network interface to sdv_rpc.
 SDV_RPC_INTERFACE ?= eth1
 
