@@ -18,7 +18,7 @@
 $(call inherit-product, packages/services/display_safety/service/ivi/ds_common.mk)
 
 # Use sdv_ivi_arm64 image as base
-$(call inherit-product, vendor/google/sdv/sdv_ivi_arm64/sdv_ivi_arm64.mk)
+$(call inherit-product, device/google/sdv/sdv_ivi_arm64/sdv_ivi_arm64.mk)
 
 ENABLE_CLUSTER_OS_DOUBLE := true
 
